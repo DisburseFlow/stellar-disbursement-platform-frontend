@@ -37,6 +37,7 @@ import { Profile } from "@/pages/Profile";
 import { ReceiverDetails } from "@/pages/ReceiverDetails";
 import { ReceiverDetailsEdit } from "@/pages/ReceiverDetailsEdit";
 import { Receivers } from "@/pages/Receivers";
+import { SapconeLogin } from "@/pages/SapconeLogin";
 import { SigninOidc } from "@/pages/Redirect";
 import { ResetPassword } from "@/pages/ResetPassword";
 import { SetNewPassword } from "@/pages/SetNewPassword";
@@ -95,7 +96,17 @@ export const App = () => {
                   <SignIn />
                 </InnerPage>
               }
+           />
+        {/* Sapcone login */}
+          <Route
+              path={Routes.SAPCONE_LOGIN}
+              element={
+                <InnerPage isCardLayout>
+                  <SapconeLogin />
+                </InnerPage>
+              }
             />
+
             {/* Forgot password */}
             <Route
               path={Routes.FORGOT_PASSWORD}

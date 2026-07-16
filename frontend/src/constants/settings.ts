@@ -26,6 +26,7 @@ export const READY_PAYMENT_STATUS = "READY";
 export enum Routes {
   MFA = "/mfa",
   HOME = "/home",
+  SAPCONE_LOGIN = "/sapcone-login",
   FORGOT_PASSWORD = "/forgot-password",
   RESET_PASSWORD = "/reset-password",
   SET_NEW_PASSWORD = "/set-password",
